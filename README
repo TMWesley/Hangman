@@ -1,0 +1,6 @@
+I'm creating a hangman game. Desired features:
+Randomly generate many secret words, not just one.
+Automatically generate the same number of dashes as letters in the secret word. Replace the dashes with the correctly guessed letter(s) in the correct position(s). 
+Players who enter multiple letters, numbers and symbols recieve an error and are routed back to enter an acceptable single letter.
+Tell the player how many guesses they have left.
+"Draw" the hangman as the player guesses wrong answers. 
