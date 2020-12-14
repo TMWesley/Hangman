@@ -1,18 +1,20 @@
-secret_word = 'tiffany'
+secret_word = 'asparagus'
 user_guess = ''
 turns = 12
 while turns > 0:
     failed = 0
     for letter in secret_word:
-        if letter in user_guess:
-            print(user_guess)
-        else:
+        if letter not in user_guess:
             print("_")
-        failed += 1
-        if failed == 0:
-            print("You won!")
+            failed += 1
+        else:
+            print(letter)
+    if failed == 0:
+        print("You won!")
     guess = input("please guess a letter:")
+    user_guess += guess
     if guess not in secret_word:
+        print('incorrect!')
         turns -=1
         if turns == 0:
             failed == 1
